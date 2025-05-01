@@ -104,8 +104,8 @@ module "central_vpcs" {
 
 # ---------- AWS NETWORK FIREWALL ----------
 module "network_firewall" {
-  source  = "aws-ia/networkfirewall/aws"
-  version = "1.0.1"
+  source  = "blackbird-cloud/networkfirewall/aws"
+  version = "1.0.2"
 
   for_each = {
     for k, v in try(var.central_vpcs, {}) : k => v
