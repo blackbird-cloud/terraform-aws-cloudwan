@@ -92,12 +92,13 @@ EOF
         "type",
         "name",
         "cidr_block",
-        "az_count",
         "vpc_ipv4_ipam_pool_id",
         "vpc_ipv4_netmask_length",
+        "az_count",
         "vpc_enable_dns_hostnames",
         "vpc_enable_dns_support",
         "vpc_instance_tenancy",
+        "vpc_flow_logs",
         "subnets",
         "tags"
       ])) == 0
